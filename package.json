@@ -4,11 +4,14 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack && nodemon"
+    "start": "node ./dist/bundle.js",
+    "dev": "webpack && nodemon",
+    "build": "webpack --config webpack.config.prod.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.12",
     "@types/node": "^15.12.4",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "nodemon": "^2.0.7",
     "ts-loader": "^9.2.3",
     "ts-node": "^10.0.0",
