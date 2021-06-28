@@ -8,11 +8,8 @@ const config: Configuration = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: 'dist',
   },
   devServer: {
-    publicPath: '/dist/',
-    contentBase: 'dist',
     port: 3000,
   },
   devtool: 'inline-source-map',
