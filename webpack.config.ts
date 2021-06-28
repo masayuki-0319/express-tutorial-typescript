@@ -12,9 +12,8 @@ const config: Configuration = {
   },
   devServer: {
     publicPath: '/dist/',
-    hot: true,
-    contentBase: '/dist/bundle.js',
-    compress: true,
+    contentBase: 'dist',
+    port: 3000,
   },
   devtool: 'inline-source-map',
   module: {
